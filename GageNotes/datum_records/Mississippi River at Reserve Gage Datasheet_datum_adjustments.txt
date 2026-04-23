@@ -1,0 +1,52 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at Reserve Gage Datasheet.pdf
+# USACE Code  : 01260
+# Generated   : 2026-04-23T01:45:13 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NGVD29 (1983- 2001)|NAVD88|-1.19|2024-09-27T00:00:00|||Adjustment of Gage 01260 determined via RTK constrained to primary benchmark S 379. Elevation of S 379 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024.
+NGVD29 (1983- 2001)|NAVD88|-0.76|2017-11-29T00:00:00|2024-09-26T00:00:00||THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION add -0.76' to adjust data to NAVD88 (OPUS 2010, GEIOD 12B); PBM PLMS = 31.85'.
+NGVD29 (1983- 2001)|NAVD88|-0.85|2010-05-05T00:00:00|2017-11-28T00:00:00||THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION add -0.85' to adjust data to NAVD88 OPUS 2010; Adjustment determined using the 2010 inspection with an updated NAVD88 (OPUS 2010, GEOID 12A) elevation of PBM PLMS 460.
+NGVD29 (1983- 2001)|NGVD29|0.2|2001-10-09T00:00:00|2001-10-10T00:00:00|NO EPOCH|THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION gage divergence; gage found in error by + 0.2' and was reset to new wire weight elevation of 37.72'
+NGVD29 (1983- 2001)|NAVD88|-0.87|2022-10-26T00:00:00||2009.55|Add -0.87' to gage data to adjust from NGVD29 (1983) to NAVD88 (2009.55). Survey conducted using PBM Reserve NAVD88 (2009.55) elevation = 4.220'
+NGVD29 (1983- 2001)|NAVD88|-0.77|2019-08-30T00:00:00||2004.65|Add - 0.77' to gage data to adjust from from NGVD29 (1983-2001) to NAVD88 (2004.65). Survey conducted using TBM Square NAVD88 (2004.65) elevation = 23.92'
+NGVD29 (1983- 2001)|NAVD88|-0.7|2010-05-05T00:00:00|2019-08-29T00:00:00|2004.65|Add - 0.70' to gage data to adjust from from NGVD29 (1983-2001) to NAVD88 (2004.65). Survey conducted using BM PLMS 460 NAVD88 (2004.65) elevation = 32.00'
+NGVD29 (OTHER)|NGVD29|-1.0|1987-03-13T00:00:00|1993-01-14T00:00:00|1983|Add -1.00' to gage data to adjust to NGVD29 (1983). Survey conducted using PBM Q-95 NGVD29(elevation) = 16.15'. Gage reset to NGVD29 (1983)
+NGVD29 (1976)|NGVD29|-0.1|1976-11-29T00:00:00|1987-03-13T00:00:00|1983|Add -0.10' to gage data to adjust from NGVD29 (1976) to NGVD29 (1983). Survey conducted using PBM Q-95 NGVD29 (1983) elevation = 16.15'
+NGVD29 (1967)|NGVD29|-0.13|1975-09-04T00:00:00|1976-11-29T00:00:00|1976|Add -0.13' to gage data to adjust from NGVD29 (1967) to NGVD29 (1976). Survey conducted using TBM I-Beam NGVD29 (1976) elevation = 32.91'
+NGVD29 (1951)|NGVD29|-0.54|1969-06-13T00:00:00|1975-09-04T00:00:00|1967|Add -0.54 to gage data to adjust from NGVD29 (1951) to NGVD29 (1967). Survey conducted using PBM Q-95 NGVD29 (1967) elevation = 16.23'
+NGVD29 (1951)|NGVD29|-0.58|1953-07-30T00:00:00|1969-06-12T00:00:00|1967|Add -0.57 to gage data to adjust from NGVD29 (1951) to NGVD 29 (1967); PBM Q-95 elevation = 16.23' NGVD 29 (1967); gage zero = -0.57 NGVD29 (1967)

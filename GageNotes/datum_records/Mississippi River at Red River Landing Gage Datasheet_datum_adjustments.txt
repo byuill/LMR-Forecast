@@ -1,0 +1,48 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at Red River Landing Gage Datasheet.pdf
+# USACE Code  : 01120
+# Generated   : 2026-04-23T01:45:13 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NGVD29 (1976)|NAVD88|-1.04|2026-02-19T00:00:00||OPUS|-add -1.04' to gage data to adjust from NGVD29 (1976) to NAVD88 (OPUS 2024.70) (Geoid18) determined using TBM LUCUST #2 elevation =56.04'.
+NGVD29 (1976)|NAVD88|-1.14|2024-09-27T00:00:00|2026-02-18T00:00:00||-adjustment of Gage 01120 determined via RTK constrained to primary benchmark K 282. Elevation of K 282 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024.
+NGVD29 (1976)|NAVD88|-0.56|2010-04-27T00:00:00|2019-09-12T00:00:00||-add -0.56' to gage data to adjust from NGVD29 to NAVD88 OPUS 2010 GEOID 12A. Survey conducted using PBM ABLD 13 LMS45 elevation = 69.05'. adjustment is for Staff Section "A"
+NGVD29 (1976)|NAVD88|-0.27|2024-04-02T00:00:00|2024-09-26T00:00:00|2004.65|-add-0.27' to gage data to adjust from NGVD29 to NAVD88 (2004.65). Survey conducted using TBM Locust #2 elevation = 56.04'; (Geoid12A).
+NGVD29 (1976)|NAVD88|-0.27|2022-02-02T00:00:00|2024-04-01T00:00:00|2004.65|-add -0.27' to gage data to adjust from NGVD29 to NAVD88 2004.65; Survey conducted using TBM Locust #2 elevation = 56.04'; (Geoid12A).
+NGVD29 (1976)|NAVD88|-0.28|2019-09-13T00:00:00|2022-02-01T00:00:00|2004.65|-add -0.28' to gage data to adjust from NGVD29 to NAVD88 2004.65. Section "B" staff reset. Survey conducted using TBM Cottonwood elevation = 54.27'; (Geoid12A) determined by levels 04/27/2010
+NGVD29 (1976)|NAVD88|-0.29|2010-04-27T00:00:00|2019-09-12T00:00:00|2004.65|-add -0.29' to gage data to adjust from NGVD29 to NAVD88 2004.65. Survey conducted using ABLD 13 LMS 45 elevation = 69.32'. adjustment is for Staff Section "A"a-
+NGVD29 (1967)|NGVD29|3.46|1975-09-16T00:00:00|1975-09-17T00:00:00|1976|-add +3.46' to shift data to NGVD29 (1967) value with new zero of 0.00'

@@ -1,0 +1,23 @@
+--- Stage_Values_For_You.py
++++ Stage_Values_For_You.py
+@@ -1974,18 +1974,16 @@
+     checkpoint_path = CACHE_DIR / "training_checkpoint.pkl"
++    bundles: Dict[str, StationModelBundle] = {}
++    metrics_rows: List[Dict[str, float]] = []
+     if checkpoint_path.exists():
+         log.info(
+             "--- MILESTONE 4: Resuming Iterative Model Training from Checkpoint ---")
+         with open(checkpoint_path, "rb") as f:
+             chk = pickle.load(f)
+             bundles = chk["bundles"]
+             corrected_network = chk["corrected"]
+             predicted_network = chk["predicted"]
+             outlier_network = chk["outlier"]
+             metrics_rows = chk["metrics"]
+     else:
+         log.info("--- MILESTONE 4: Iterative Model Training ---")
+-        bundles: Dict[str, StationModelBundle] = {}
+         corrected_network = pd.DataFrame(index=base.index)
+         predicted_network = pd.DataFrame(index=base.index)
+         outlier_network = pd.DataFrame(index=base.index)
+-        metrics_rows: List[Dict[str, float]] = []

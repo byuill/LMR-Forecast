@@ -1,0 +1,254 @@
+{
+  "01080_to_01120": {
+    "overall": 10,
+    "low": 10,
+    "medium_low": 10,
+    "medium_high": 10,
+    "high": 10
+  },
+  "01080_to_01145": {
+    "overall": 10,
+    "low": 10,
+    "medium_low": 10,
+    "medium_high": 10,
+    "high": 10
+  },
+  "01080_to_01160": {
+    "overall": 10,
+    "low": 10,
+    "medium_low": 10,
+    "medium_high": 10,
+    "high": 10
+  },
+  "01120_to_01145": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01120_to_01160": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01120_to_01220": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01145_to_01160": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01145_to_01220": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01145_to_01280": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01160_to_01220": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01160_to_01280": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01160_to_01300": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01220_to_01280": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01220_to_01300": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01220_to_01390": {
+    "overall": 17,
+    "low": 17,
+    "medium_low": 17,
+    "medium_high": 17,
+    "high": 17
+  },
+  "01280_to_01300": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01280_to_01390": {
+    "overall": 17,
+    "low": 17,
+    "medium_low": 17,
+    "medium_high": 17,
+    "high": 17
+  },
+  "01280_to_01400": {
+    "overall": 2,
+    "low": 2,
+    "medium_low": 2,
+    "medium_high": 2,
+    "high": 2
+  },
+  "01300_to_01390": {
+    "overall": 18,
+    "low": 18,
+    "medium_low": 18,
+    "medium_high": 18,
+    "high": 18
+  },
+  "01300_to_01400": {
+    "overall": 2,
+    "low": 2,
+    "medium_low": 2,
+    "medium_high": 2,
+    "high": 2
+  },
+  "01300_to_01440": {
+    "overall": 2,
+    "low": 2,
+    "medium_low": 2,
+    "medium_high": 2,
+    "high": 2
+  },
+  "01390_to_01400": {
+    "overall": 11,
+    "low": 11,
+    "medium_low": 11,
+    "medium_high": 11,
+    "high": 11
+  },
+  "01390_to_01440": {
+    "overall": 11,
+    "low": 11,
+    "medium_low": 11,
+    "medium_high": 11,
+    "high": 11
+  },
+  "01390_to_01480": {
+    "overall": 21,
+    "low": 21,
+    "medium_low": 21,
+    "medium_high": 21,
+    "high": 21
+  },
+  "01400_to_01440": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01400_to_01480": {
+    "overall": 18,
+    "low": 18,
+    "medium_low": 18,
+    "medium_high": 18,
+    "high": 18
+  },
+  "01400_to_01515": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01440_to_01480": {
+    "overall": 18,
+    "low": 18,
+    "medium_low": 18,
+    "medium_high": 18,
+    "high": 18
+  },
+  "01440_to_01515": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01440_to_01545": {
+    "overall": 18,
+    "low": 18,
+    "medium_low": 18,
+    "medium_high": 18,
+    "high": 18
+  },
+  "01480_to_01515": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01480_to_01545": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01480_to_01670": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  },
+  "01515_to_01545": {
+    "overall": 13,
+    "low": 13,
+    "medium_low": 13,
+    "medium_high": 13,
+    "high": 13
+  },
+  "01515_to_01670": {
+    "overall": 4,
+    "low": 4,
+    "medium_low": 4,
+    "medium_high": 4,
+    "high": 4
+  },
+  "01545_to_01670": {
+    "overall": 0,
+    "low": 0,
+    "medium_low": 0,
+    "medium_high": 0,
+    "high": 0
+  }
+}

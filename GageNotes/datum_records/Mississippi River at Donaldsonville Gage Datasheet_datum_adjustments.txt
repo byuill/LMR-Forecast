@@ -1,0 +1,48 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at Donaldsonville Gage Datasheet.pdf
+# USACE Code  : 01220
+# Generated   : 2026-04-23T01:45:10 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NGVD29 (1983)|NAVD88|-1.18|2024-09-27T00:00:00||OPUS|Adjustment of Gage 01220 determined via RTK constrained to primary benchmark R 295. Elevation of R 295 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024.
+NGVD29 (1983)|NAVD88|-0.74|1988-06-14T00:00:00|2017-11-29T00:00:00|OPUS|Add -0.74 to gage data to adjust from NGVD29 (1983) to NAVD88 (OPUS). Survey conducted using BM 01220 NAVD88 (OPUS) elevation = 38.09'
+GAGE DATUM|NGVD29|-0.68|1975-09-19T00:00:00|1984-10-05T00:00:00|NO EPOCH|Add -0.68' to gage data to adjust from gate datum to MSL. Survey conducted using BM 1909 elevation = 25.98'
+GAGE DATUM|NGVD29|-1.19|1952-01-13T00:00:00|1975-09-18T00:00:00|NO EPOCH|Add -1.19 to gage data to adjust from gage datum to MSL. Survey conducted using PBM Donaldsonville Gage Datum elevation = 27.99'
+NGVD29 (1983)|NAVD88|-1.087|1988-06-14T00:00:00|2022-04-07T00:00:00|2009.55|Add -1.087' to gage data to adjust from gage datum to NAVD88 (2009.55). Survey conducted using PBM MVN-71 NAVD88 (2009.55) elevation = 39.820'. Survey conducted on 04/07/2022
+NGVD29 (1983)|NAVD88|-0.82|1988-06-14T00:00:00|2010-05-06T00:00:00|2004.65|Add -0.820' to gage data to adjust from NGVD29 (1983) to NAVD88 (2004.65). Survey conducted using R 295 NAVD88 (2004.65) elevation = 30.31'
+NGVD29 (1983)|NGVD29|-0.17|1995-07-25T00:00:00|1995-07-26T00:00:00|1983-2001|UNVERIFIED GAGE ADJUSTMENT, USE WITH CAUTION gage divergence; add -0.17 to shift data to correct NGVD29 (1983) value
+GAGE DATUM|NGVD29|-1.22|1984-10-06T00:00:00|1988-06-14T00:00:00|1983|add - 1.22 to shift data from MSL (1976) to NGVD29 (1983)

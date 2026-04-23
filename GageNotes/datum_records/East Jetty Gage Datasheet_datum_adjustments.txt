@@ -1,0 +1,52 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : East Jetty Gage Datasheet.pdf
+# USACE Code  : 01670
+# Generated   : 2026-04-23T01:45:07 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NGVD29 (1976)|NGVD29|0.24|1985-09-25T00:00:00|1985-09-26T00:00:00|OTHER|add +0.24 ' to shift data from NGVD29 (1976) to NGVD29 (Other)
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|-1.23|2015-06-29T00:00:00||2009.55|add -1.23' to shift data to NAVD88 (2009.55)
+MLG|NAVD88|-3.75|2014-08-12T00:00:00||2009.55|Adjustment determined from control point TBM JETTY
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|-1.25|2014-08-12T00:00:00|2015-06-28T00:00:00|2009.55|add -1.250 to shift data from NAVD88 (2004.65) to NAVD88 (2009.55); adjustment determined using TBM Jetty
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|-1.37|2013-10-25T00:00:00|2014-08-11T00:00:00|2009.55|add -1.370' to shift data from NAVD88 (2004.65) to NAVD88 (2009.55)
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|0.11|2010-08-19T00:00:00|2013-10-25T00:00:00|2004.65|gage divergence of +0.11'; add +0.11' to adjust data to correct NAVD88 (2004.65) value
+NGVD29 (1983- 2001)|NAVD88|-2.45|2008-01-15T00:00:00|2008-01-16T00:00:00|2004.65|add -2.45' to shift data from NGVD29 (1983-2001) to NAVD88 (2004.65)
+GAGE DATUM [formerly NGVD29 (1976)]|NGVD29|-1.15|1987-03-26T00:00:00||1983-2001|add -1.150' to shift data from "Gage Datum", formerly NGVD29 (1976) to NGVD29 (1983-2001)
+NGVD29 (1970)|NGVD29|-0.91|1984-10-26T00:00:00|1984-10-27T00:00:00|1983|add -0.91' to shift data from MSL (1971) to NGVD29 (1983)
+GAGE DATUM [formerly NGVD29 (1976)]|NGVD29|0.24|1985-09-26T00:00:00|||gage divergence; add +.24' to adjust to correct MSL (1976) value
+NGVD29 (1983)|NGVD29|0.97|1985-03-27T00:00:00|1985-03-28T00:00:00||add + 0.970' to shift data from NGVD29 (1983) to MSL (1976)
+NGVD29 (1963)|NGVD29|-0.76|1975-10-04T00:00:00|1975-10-05T00:00:00|1970|add -0.76' to shift data from MSL (1961) to MSL (1971)

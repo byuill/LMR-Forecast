@@ -1,0 +1,1292 @@
+{
+  "01670": [
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.24,
+      "start_date": "1985-09-25T00:00:00",
+      "end_date": "1985-09-26T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "add +0.24 ' to shift data from NGVD29 (1976) to NGVD29 (Other)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.23,
+      "start_date": "2015-06-29T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "add -1.23' to shift data to NAVD88 (2009.55)"
+    },
+    {
+      "cal_datum": "MLG",
+      "target_datum": "NAVD88",
+      "factor_ft": -3.75,
+      "start_date": "2014-08-12T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "Adjustment determined from control point TBM JETTY"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.25,
+      "start_date": "2014-08-12T00:00:00",
+      "end_date": "2015-06-28T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "add -1.250 to shift data from NAVD88 (2004.65) to NAVD88 (2009.55); adjustment determined using TBM Jetty"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.37,
+      "start_date": "2013-10-25T00:00:00",
+      "end_date": "2014-08-11T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "add -1.370' to shift data from NAVD88 (2004.65) to NAVD88 (2009.55)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.11,
+      "start_date": "2010-08-19T00:00:00",
+      "end_date": "2013-10-25T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "gage divergence of +0.11'; add +0.11' to adjust data to correct NAVD88 (2004.65) value"
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -2.45,
+      "start_date": "2008-01-15T00:00:00",
+      "end_date": "2008-01-16T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "add -2.45' to shift data from NGVD29 (1983-2001) to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1976)]",
+      "target_datum": "NGVD29",
+      "factor_ft": -1.15,
+      "start_date": "1987-03-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "1983-2001",
+      "notes": "add -1.150' to shift data from \"Gage Datum\", formerly NGVD29 (1976) to NGVD29 (1983-2001)"
+    },
+    {
+      "cal_datum": "NGVD29 (1970)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.91,
+      "start_date": "1984-10-26T00:00:00",
+      "end_date": "1984-10-27T00:00:00",
+      "target_epoch": "1983",
+      "notes": "add -0.91' to shift data from MSL (1971) to NGVD29 (1983)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1976)]",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.24,
+      "start_date": "1985-09-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "gage divergence; add +.24' to adjust to correct MSL (1976) value"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.97,
+      "start_date": "1985-03-27T00:00:00",
+      "end_date": "1985-03-28T00:00:00",
+      "target_epoch": "",
+      "notes": "add + 0.970' to shift data from NGVD29 (1983) to MSL (1976)"
+    },
+    {
+      "cal_datum": "NGVD29 (1963)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.76,
+      "start_date": "1975-10-04T00:00:00",
+      "end_date": "1975-10-05T00:00:00",
+      "target_epoch": "1970",
+      "notes": "add -0.76' to shift data from MSL (1961) to MSL (1971)"
+    }
+  ],
+  "01275": [
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.98,
+      "start_date": "2025-01-24T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01275 determined via differential levelling constrained to primary benchmark 24064 P 1. Elevation of 24064 P 1 determined via OPUS Shared observation done in Jan 2025. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2025."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.68,
+      "start_date": "2011-07-26T00:00:00",
+      "end_date": "2018-05-02T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Adjustment determined using the 2010 inspection with an updated NAVD88 (OPUS 2011, GEOID 12A) elevation of J95."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.525,
+      "start_date": "2022-02-10T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "Add -0.525 to shift data to NAVD88 2009.55 using benchmark G 95 ECC elevation 26.790' (GEOID 12B)"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.55,
+      "start_date": "2018-05-02T00:00:00",
+      "end_date": "2022-02-09T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -0.55 to shift data to NAVD88 2009.55 using benchmark G 95 elevation 27.01'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.72,
+      "start_date": "2010-04-07T00:00:00",
+      "end_date": "2011-07-26T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "add -.720' to shift data to NAVD88 (2004.65)"
+    }
+  ],
+  "01390": [
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1983)]",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.33,
+      "start_date": "1987-03-10T00:00:00",
+      "end_date": "1987-03-11T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "gage zero = -.33' MSL (1950)"
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.38,
+      "start_date": "2024-09-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "Adjustment of Gage 01390 determined via RTK constrained to primary benchmark MVN-66. Elevation of MVN-66 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.0,
+      "start_date": "2013-10-09T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "Gage zero = NAVD88 (2009.55); The October 2013 gage survey showed that the gage was equivalent to NAVD88 (2009.55)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1983)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.71,
+      "start_date": "2007-11-27T00:00:00",
+      "end_date": "2008-07-18T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": ""
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.71,
+      "start_date": "2012-01-24T00:00:00",
+      "end_date": "2012-01-25T00:00:00",
+      "target_epoch": "1983",
+      "notes": "Refer to Gage Inspection dated 8/03/2010"
+    }
+  ],
+  "01300": [
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1986)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.96,
+      "start_date": "2017-08-10T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "add -0.96' to adjust the gage to NAVD88 (2009.55); adjustment determined using TBM Nod = 24.12'; 1955A = 18.95'; 1955B = 20.64'"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1986)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.01,
+      "start_date": "2014-10-02T00:00:00",
+      "end_date": "2017-08-09T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "add -1.01 to shift data to NAVD88 (2009.55); TBM 1955A = 18.90' NAVD88 (2009.55); use 2017 adjustment"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1986)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.71,
+      "start_date": "2010-02-11T00:00:00",
+      "end_date": "2014-10-01T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "add -0.71' to shift data to NAVD88 (2004.65); PBM District 1-A = 10.82' NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NGVD29 (1986)]",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.13,
+      "start_date": "2017-08-10T00:00:00",
+      "end_date": "2017-08-11T00:00:00",
+      "target_epoch": "1986",
+      "notes": "gage divergence; Survey done in NGVD29 (1985) using TBM NOD, elevation = 24.95' ;"
+    },
+    {
+      "cal_datum": "NGVD29 (1970)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.26,
+      "start_date": "1987-02-26T00:00:00",
+      "end_date": "1987-02-27T00:00:00",
+      "target_epoch": "1986",
+      "notes": "add -0.26' to shift data to NGVD29 (1986)"
+    },
+    {
+      "cal_datum": "NGVD29 (1955)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.61,
+      "start_date": "1974-11-07T00:00:00",
+      "end_date": "1974-11-08T00:00:00",
+      "target_epoch": "1970",
+      "notes": "add -o.61' to shift data to MSL (1968); PBM Reservation = 10.58' MSL (1968)"
+    },
+    {
+      "cal_datum": "NGVD29 (1955)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.74,
+      "start_date": "1969-08-15T00:00:00",
+      "end_date": "1969-08-16T00:00:00",
+      "target_epoch": "",
+      "notes": "add -0.74' to shift data to MSL (1965); PBM Reservation elevation = 10.45' (MSL (1965)"
+    }
+  ],
+  "01220": [
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.18,
+      "start_date": "2024-09-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01220 determined via RTK constrained to primary benchmark R 295. Elevation of R 295 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.74,
+      "start_date": "1988-06-14T00:00:00",
+      "end_date": "2017-11-29T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.74 to gage data to adjust from NGVD29 (1983) to NAVD88 (OPUS). Survey conducted using BM 01220 NAVD88 (OPUS) elevation = 38.09'"
+    },
+    {
+      "cal_datum": "GAGE DATUM",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.68,
+      "start_date": "1975-09-19T00:00:00",
+      "end_date": "1984-10-05T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -0.68' to gage data to adjust from gate datum to MSL. Survey conducted using BM 1909 elevation = 25.98'"
+    },
+    {
+      "cal_datum": "GAGE DATUM",
+      "target_datum": "NGVD29",
+      "factor_ft": -1.19,
+      "start_date": "1952-01-13T00:00:00",
+      "end_date": "1975-09-18T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -1.19 to gage data to adjust from gage datum to MSL. Survey conducted using PBM Donaldsonville Gage Datum elevation = 27.99'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.087,
+      "start_date": "1988-06-14T00:00:00",
+      "end_date": "2022-04-07T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -1.087' to gage data to adjust from gage datum to NAVD88 (2009.55). Survey conducted using PBM MVN-71 NAVD88 (2009.55) elevation = 39.820'. Survey conducted on 04/07/2022"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.82,
+      "start_date": "1988-06-14T00:00:00",
+      "end_date": "2010-05-06T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Add -0.820' to gage data to adjust from NGVD29 (1983) to NAVD88 (2004.65). Survey conducted using R 295 NAVD88 (2004.65) elevation = 30.31'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.17,
+      "start_date": "1995-07-25T00:00:00",
+      "end_date": "1995-07-26T00:00:00",
+      "target_epoch": "1983-2001",
+      "notes": "UNVERIFIED GAGE ADJUSTMENT, USE WITH CAUTION gage divergence; add -0.17 to shift data to correct NGVD29 (1983) value"
+    },
+    {
+      "cal_datum": "GAGE DATUM",
+      "target_datum": "NGVD29",
+      "factor_ft": -1.22,
+      "start_date": "1984-10-06T00:00:00",
+      "end_date": "1988-06-14T00:00:00",
+      "target_epoch": "1983",
+      "notes": "add - 1.22 to shift data from MSL (1976) to NGVD29 (1983)"
+    }
+  ],
+  "01440": [
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.11,
+      "start_date": "2010-08-05T00:00:00",
+      "end_date": "2010-08-06T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "divergence of -0.11 found using BM 1193 B"
+    },
+    {
+      "cal_datum": "NGVD29 (1970)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.6,
+      "start_date": "1981-01-21T00:00:00",
+      "end_date": null,
+      "target_epoch": "OTHER",
+      "notes": "Gage Divergence; gage correction to Gage Datum formerly MSL (1971);"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2009.55)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.39,
+      "start_date": "2024-11-22T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01440 determined via RTK constrained to primary benchmark 01440 P. Elevation of 01440 P determined via OPUS Shared observation done in Nov 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2009.55)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.12,
+      "start_date": "2018-09-26T00:00:00",
+      "end_date": "2024-11-21T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "gage divergence found determined from PBM 1193B, elevation = 11.98'; gage zero = -0.12' NAVD88 (2009.55)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.64,
+      "start_date": "2013-10-01T00:00:00",
+      "end_date": "2015-07-01T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": ""
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.6,
+      "start_date": "2015-07-01T00:00:00",
+      "end_date": "2018-09-25T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Adjustment determined from primary benchmark 1193 B."
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.79,
+      "start_date": "2005-11-29T00:00:00",
+      "end_date": "2005-11-30T00:00:00",
+      "target_epoch": "1984",
+      "notes": "Adjustment determined from PBM EMPIRE AZ MK 2"
+    },
+    {
+      "cal_datum": "NGVD29 (1984)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.24,
+      "start_date": "1987-02-24T00:00:00",
+      "end_date": "1988-02-25T00:00:00",
+      "target_epoch": "1983",
+      "notes": "gage correction to NGVD29 (1983)"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.54,
+      "start_date": "1984-09-13T00:00:00",
+      "end_date": "1984-09-14T00:00:00",
+      "target_epoch": "1970",
+      "notes": "adjustment was determined by level loop using PBM K-195; PBM K-195 = 6.78' NGVD29 (1983), PBM K-195 = 7.32' Gage Datum formerly MSL (1971)"
+    },
+    {
+      "cal_datum": "NGVD29 (1970)",
+      "target_datum": "NGVD29",
+      "factor_ft": 1.1,
+      "start_date": "1974-02-02T00:00:00",
+      "end_date": "1974-02-03T00:00:00",
+      "target_epoch": "1967",
+      "notes": "correction to Gage Datum MSL (1968) formerly MSL (1960); adjustment determined by level loop using TBM Baham, 8.89' (1971); 9.99' (1968) and (1960)"
+    },
+    {
+      "cal_datum": "NGVD29 (1963)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.77,
+      "start_date": "1970-12-18T00:00:00",
+      "end_date": "1974-02-01T00:00:00",
+      "target_epoch": "1967",
+      "notes": "Gage Divergence; 1968 leveling adjustment to MSL (1960); gage was adjusted by -0.77' from MSL (1960) to MSL (1968)"
+    }
+  ],
+  "01545": [
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2009.55)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.246,
+      "start_date": "2022-07-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "Add -0.246 to gage readings to go from gage datum to NAVD88 2009.55"
+    },
+    {
+      "cal_datum": "UNKNOWN",
+      "target_datum": "NAVD88",
+      "factor_ft": -2.98,
+      "start_date": "2000-01-01T00:00:00",
+      "end_date": "2020-09-30T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -2.98' to go from Gage Datum (presumably MLG) to NAVD88 2009.55. gage surveyed using TMB Pal as the base 2.52' and checked on PBM Pilot 5.56'."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLG",
+      "factor_ft": 3.03,
+      "start_date": "2020-05-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "Gage adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. Gage adjustment value is also based on the -0.15' gage divergence as measured on 9/30/2018. This adjustment value is relative to MLLW (2012- 2016)."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLG",
+      "factor_ft": 3.17,
+      "start_date": "2018-10-01T00:00:00",
+      "end_date": "2020-05-25T00:00:00",
+      "target_epoch": "",
+      "notes": "Gage adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. Gage adjustment value is also based on the -0.15' gage divergence as measured on 9/30/2018. This adjustment value is relative to MLLW (2007- 2011)."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLLW",
+      "factor_ft": -0.47,
+      "start_date": "2020-05-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "OTHER",
+      "notes": "Gage adjustment value is based on MLLW (2012- 2016) defined in EDR-OD-01, Revision 2 dated 5/26/2020. Gage adjustment value is also based on the -0.15' gage divergence as measured on 9/30/2018."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLG",
+      "factor_ft": 3.32,
+      "start_date": "2015-07-10T00:00:00",
+      "end_date": "2018-09-30T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. This current adjustment is relative to MLLW (2007- 2011)."
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.19,
+      "start_date": "2010-02-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "OTHER",
+      "notes": "Add 0.19' to gage data to adjust back to NAVD88 2004.65. Surveyed conducted 08/16/2010 using TBM Head B elevation = 13.66'"
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.14,
+      "start_date": "2008-01-15T00:00:00",
+      "end_date": "2010-02-26T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Add 0.14' to gage date to adjust back to NAVD88 2004.65. Survey conducted 02/26/2010 using TBM Bolt elevation = 4.48'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.0,
+      "start_date": "1991-05-30T00:00:00",
+      "end_date": "1991-05-31T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "No adjustment needed, previous benchmarks destroyed and unusable. New benchmarks set using the staff as a reference point."
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.174,
+      "start_date": "1952-10-22T00:00:00",
+      "end_date": "1954-01-15T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Add -0.174' to gage data to adjust to NGVD29. Gage surveyed and reset using TBM Willow elevation = 5.022'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.12,
+      "start_date": "1946-12-12T00:00:00",
+      "end_date": "1952-10-22T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Add -0.12' to gage data to adjust to NGVD29. Gage surveyed and reset 10/22/1952 using BM Burr 1950 elevation = 7.940'"
+    },
+    {
+      "cal_datum": "NAVD88",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.316,
+      "start_date": "1944-10-02T00:00:00",
+      "end_date": "1946-12-12T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Add -0.316' to gage data to adjust back to NGVD29. Gage surveyed and reset 12/12/1946 using TBM Willow elevation = 6.404'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.1,
+      "start_date": "1943-12-06T00:00:00",
+      "end_date": "1944-10-02T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "Add -0.10' to gage data to adjust to NGVD29. Staff surveyed and set 10/02/1944 using TP HofP elevation = 7.541'."
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.217,
+      "start_date": "2008-01-15T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Add -0.217' to gage data to adjust to NAVD88 OPUS 2021. Survey conducted 07/29/2022 using PBM Pilot ECC OPUS shared solution elevation = 5.031'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.43,
+      "start_date": "1972-12-29T00:00:00",
+      "end_date": "1984-01-05T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -0.43' to gage data to adjust to NGVD29"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.06,
+      "start_date": "1964-02-28T00:00:00",
+      "end_date": "1964-07-20T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add 0.06' to gage data to adjust to NGVD29. Gage surveyed and set using PBM Mi 0.25 elevation = 5.21'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.03,
+      "start_date": "1959-10-08T00:00:00",
+      "end_date": "1964-02-27T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add 0.03' to gage data to adjust to NGVD29."
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.21,
+      "start_date": "1959-10-06T00:00:00",
+      "end_date": "1959-10-08T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -0.21' to gage data to adjust to NGVD29. Gage surveyed and reset 10/08/1959 using TP Bolt elevation = 6.80'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.28,
+      "start_date": "1956-05-15T00:00:00",
+      "end_date": "1957-12-17T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -0.28' to data to adjust to NGVD29. Surveyed and reset using PBM Wise (1956) elevation = 4.39'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.14,
+      "start_date": "1956-05-15T00:00:00",
+      "end_date": "1957-12-12T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Add -0.14 to gage data to get to NGVD29. Gage surveyed and reset 12/12/1957 using PBM Wise elevation = 4.39'"
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.018,
+      "start_date": "2018-10-01T00:00:00",
+      "end_date": "2022-07-27T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -0.018' to gage data to adjust to NAVD88 2009.55. RTK Survey conducted 07/27/2022 using PBM Pilot ECC elevation = 5.230'."
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.15,
+      "start_date": "2014-08-14T00:00:00",
+      "end_date": "2018-09-30T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -0.15' to gage data to adjust to NAVD88 2009.55. Survey conducted using TMB Head A elevation 2.41'"
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.06,
+      "start_date": "2013-10-18T00:00:00",
+      "end_date": "2014-08-13T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -1.06' to gage data to adjust to NAVD88 2009.55. Survey conducted using TBM Pal elevation = 2.52'"
+    },
+    {
+      "cal_datum": "NAVD88 (2004.65)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.12,
+      "start_date": "2008-01-15T00:00:00",
+      "end_date": "2013-10-17T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -1.12' to gage data to adjust to NAVD88 2009.55. Surveyed 10/17/2013 using TBM Head A elevation = 2.528'."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLLW",
+      "factor_ft": -0.33,
+      "start_date": "2018-10-01T00:00:00",
+      "end_date": "2020-05-25T00:00:00",
+      "target_epoch": "",
+      "notes": "Gage adjustment value is based on MLLW defined in CEPD report dated 7/10/2015, and is relative to MLLW (2007-2011). Gage adjustment value is also based on the -0.15' gage divergence as measured on 9/30/2018."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLLW",
+      "factor_ft": -0.18,
+      "start_date": "2015-07-10T00:00:00",
+      "end_date": "2018-09-30T00:00:00",
+      "target_epoch": "",
+      "notes": "Adjustment value is defined in CEPD report dated 7/10/2015, and is relative to 2007-2011 tidal epoch."
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.0,
+      "start_date": "1994-02-28T00:00:00",
+      "end_date": "2008-01-15T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Gage surveyed in NAVD88 2004.65 using BM Head 080806 and Gage 0' NGVD29 = 0' NAVD88 2004.65"
+    }
+  ],
+  "01080": [
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.76,
+      "start_date": "2024-09-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01080 determined via RTK constrained to primary benchmark LECOQ. Elevation of LECOQ determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.08,
+      "start_date": "2023-07-18T00:00:00",
+      "end_date": "2024-09-26T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.08' to gage data adjust from NGVD29 to NAVD88 (OPUS 2019.19) determined using PBM 4GDS elevation = 73.13';(Geoid12B)."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.07,
+      "start_date": "2021-06-04T00:00:00",
+      "end_date": "2023-07-17T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.07' to gage data to adjust from NGVD29 to NAVD88 (OPUS 2019) determined using TBM # 3 elevation = 50.23'; (Geoid12B)"
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.05,
+      "start_date": "2019-09-21T00:00:00",
+      "end_date": "2021-06-03T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.05' to gage data to adjust from NGVD29 to NAVD88 (2019) determined using TBM #3 elevation = 50.23'; (Geoid12B)."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.22,
+      "start_date": "2010-04-27T00:00:00",
+      "end_date": "2019-09-20T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Add -0.22' to gage data to adjust from NGVD29 to NAVD88 (2004.65) determined using BM K254 elevation = 68.60'"
+    },
+    {
+      "cal_datum": "NGVD29 (1951)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.1,
+      "start_date": "1969-11-13T00:00:00",
+      "end_date": "1987-01-27T00:00:00",
+      "target_epoch": "1967",
+      "notes": "Add -0.10' to shift data to MSL 1965"
+    }
+  ],
+  "01120": [
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.04,
+      "start_date": "2026-02-19T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "-add -1.04' to gage data to adjust from NGVD29 (1976) to NAVD88 (OPUS 2024.70) (Geoid18) determined using TBM LUCUST #2 elevation =56.04'."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.14,
+      "start_date": "2024-09-27T00:00:00",
+      "end_date": "2026-02-18T00:00:00",
+      "target_epoch": "",
+      "notes": "-adjustment of Gage 01120 determined via RTK constrained to primary benchmark K 282. Elevation of K 282 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.56,
+      "start_date": "2010-04-27T00:00:00",
+      "end_date": "2019-09-12T00:00:00",
+      "target_epoch": "",
+      "notes": "-add -0.56' to gage data to adjust from NGVD29 to NAVD88 OPUS 2010 GEOID 12A. Survey conducted using PBM ABLD 13 LMS45 elevation = 69.05'. adjustment is for Staff Section \"A\""
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.27,
+      "start_date": "2024-04-02T00:00:00",
+      "end_date": "2024-09-26T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "-add-0.27' to gage data to adjust from NGVD29 to NAVD88 (2004.65). Survey conducted using TBM Locust #2 elevation = 56.04'; (Geoid12A)."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.27,
+      "start_date": "2022-02-02T00:00:00",
+      "end_date": "2024-04-01T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "-add -0.27' to gage data to adjust from NGVD29 to NAVD88 2004.65; Survey conducted using TBM Locust #2 elevation = 56.04'; (Geoid12A)."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.28,
+      "start_date": "2019-09-13T00:00:00",
+      "end_date": "2022-02-01T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "-add -0.28' to gage data to adjust from NGVD29 to NAVD88 2004.65. Section \"B\" staff reset. Survey conducted using TBM Cottonwood elevation = 54.27'; (Geoid12A) determined by levels 04/27/2010"
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.29,
+      "start_date": "2010-04-27T00:00:00",
+      "end_date": "2019-09-12T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "-add -0.29' to gage data to adjust from NGVD29 to NAVD88 2004.65. Survey conducted using ABLD 13 LMS 45 elevation = 69.32'. adjustment is for Staff Section \"A\"a-"
+    },
+    {
+      "cal_datum": "NGVD29 (1967)",
+      "target_datum": "NGVD29",
+      "factor_ft": 3.46,
+      "start_date": "1975-09-16T00:00:00",
+      "end_date": "1975-09-17T00:00:00",
+      "target_epoch": "1976",
+      "notes": "-add +3.46' to shift data to NGVD29 (1967) value with new zero of 0.00'"
+    }
+  ],
+  "01260": [
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.19,
+      "start_date": "2024-09-27T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "Adjustment of Gage 01260 determined via RTK constrained to primary benchmark S 379. Elevation of S 379 determined via OPUS Shared observation done in Sep 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.76,
+      "start_date": "2017-11-29T00:00:00",
+      "end_date": "2024-09-26T00:00:00",
+      "target_epoch": "",
+      "notes": "THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION add -0.76' to adjust data to NAVD88 (OPUS 2010, GEIOD 12B); PBM PLMS = 31.85'."
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.85,
+      "start_date": "2010-05-05T00:00:00",
+      "end_date": "2017-11-28T00:00:00",
+      "target_epoch": "",
+      "notes": "THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION add -0.85' to adjust data to NAVD88 OPUS 2010; Adjustment determined using the 2010 inspection with an updated NAVD88 (OPUS 2010, GEOID 12A) elevation of PBM PLMS 460."
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.2,
+      "start_date": "2001-10-09T00:00:00",
+      "end_date": "2001-10-10T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "THIS ADJUSTMENT UNVERIFIED. NO HISTORIC RECORD FOUND. USE WITH WITH DISCRESSION gage divergence; gage found in error by + 0.2' and was reset to new wire weight elevation of 37.72'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.87,
+      "start_date": "2022-10-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "2009.55",
+      "notes": "Add -0.87' to gage data to adjust from NGVD29 (1983) to NAVD88 (2009.55). Survey conducted using PBM Reserve NAVD88 (2009.55) elevation = 4.220'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.77,
+      "start_date": "2019-08-30T00:00:00",
+      "end_date": null,
+      "target_epoch": "2004.65",
+      "notes": "Add - 0.77' to gage data to adjust from from NGVD29 (1983-2001) to NAVD88 (2004.65). Survey conducted using TBM Square NAVD88 (2004.65) elevation = 23.92'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983- 2001)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.7,
+      "start_date": "2010-05-05T00:00:00",
+      "end_date": "2019-08-29T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Add - 0.70' to gage data to adjust from from NGVD29 (1983-2001) to NAVD88 (2004.65). Survey conducted using BM PLMS 460 NAVD88 (2004.65) elevation = 32.00'"
+    },
+    {
+      "cal_datum": "NGVD29 (OTHER)",
+      "target_datum": "NGVD29",
+      "factor_ft": -1.0,
+      "start_date": "1987-03-13T00:00:00",
+      "end_date": "1993-01-14T00:00:00",
+      "target_epoch": "1983",
+      "notes": "Add -1.00' to gage data to adjust to NGVD29 (1983). Survey conducted using PBM Q-95 NGVD29(elevation) = 16.15'. Gage reset to NGVD29 (1983)"
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.1,
+      "start_date": "1976-11-29T00:00:00",
+      "end_date": "1987-03-13T00:00:00",
+      "target_epoch": "1983",
+      "notes": "Add -0.10' to gage data to adjust from NGVD29 (1976) to NGVD29 (1983). Survey conducted using PBM Q-95 NGVD29 (1983) elevation = 16.15'"
+    },
+    {
+      "cal_datum": "NGVD29 (1967)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.13,
+      "start_date": "1975-09-04T00:00:00",
+      "end_date": "1976-11-29T00:00:00",
+      "target_epoch": "1976",
+      "notes": "Add -0.13' to gage data to adjust from NGVD29 (1967) to NGVD29 (1976). Survey conducted using TBM I-Beam NGVD29 (1976) elevation = 32.91'"
+    },
+    {
+      "cal_datum": "NGVD29 (1951)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.54,
+      "start_date": "1969-06-13T00:00:00",
+      "end_date": "1975-09-04T00:00:00",
+      "target_epoch": "1967",
+      "notes": "Add -0.54 to gage data to adjust from NGVD29 (1951) to NGVD29 (1967). Survey conducted using PBM Q-95 NGVD29 (1967) elevation = 16.23'"
+    },
+    {
+      "cal_datum": "NGVD29 (1951)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.58,
+      "start_date": "1953-07-30T00:00:00",
+      "end_date": "1969-06-12T00:00:00",
+      "target_epoch": "1967",
+      "notes": "Add -0.57 to gage data to adjust from NGVD29 (1951) to NGVD 29 (1967); PBM Q-95 elevation = 16.23' NGVD 29 (1967); gage zero = -0.57 NGVD29 (1967)"
+    }
+  ],
+  "01145": [
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (OPUS)]",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.42,
+      "start_date": "2025-03-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "Add 0.42' to gage data to adjust from NAVD88 OPUS to NGVD29. Gage reset 03/25/2025 using TBM Square elevation = 55.24'"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (OPUS)]",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.5,
+      "start_date": "2022-05-07T00:00:00",
+      "end_date": "2025-03-25T00:00:00",
+      "target_epoch": "",
+      "notes": "Add 0.50' to gage data to adjust from NAVD88 OPUS to NGVD29. Gage surveyed and reset to previous on 03/25/2025 using TBM Square elevation = 55.24'"
+    },
+    {
+      "cal_datum": "NAVD88 (OPUS)",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.43,
+      "start_date": "2010-08-24T00:00:00",
+      "end_date": "2022-05-06T00:00:00",
+      "target_epoch": "",
+      "notes": "Add 0.43' to gage data to adjust from NAVD88 OPUS to NGVD29. Survey conducted 05/06/2022 using PBM Willie NGVD29 elevation = 53.78'"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (OPUS)]",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.08,
+      "start_date": "2022-05-06T00:00:00",
+      "end_date": "2025-03-25T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add 0.08' to gage data to adjust back to NAVD88 OPUS. Survey conducted 03/25/2025 using TBM Square elevation = 54.82'. TBM Square elevation set 05/06/2022 using PBM Willie elevation = 53.36'"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (OPUS)]",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.1,
+      "start_date": "2017-03-30T00:00:00",
+      "end_date": "2020-02-11T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add 0.10' to gage data to adjust back to NAVD88 OPUS. Surveyed and reset 02/11/2020 using BM Willie elevation = 53.36'"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (OPUS)]",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.08,
+      "start_date": "2015-03-19T00:00:00",
+      "end_date": "2017-03-29T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add 0.08' to gage data to adjust back to NAVD88 OPUS. Surveyed and reset 03/29/2017 using BM Willie elevation = 53.36'"
+    },
+    {
+      "cal_datum": "NGVD29",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.86,
+      "start_date": "2009-03-11T00:00:00",
+      "end_date": "2010-08-24T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.86' to gage data to adjust from NGVD29 to NAVD88 OPUS 2010. Survey conducted 05/03/2010 using BM Willie elevation = 53.45'"
+    }
+  ],
+  "01020": [
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.36,
+      "start_date": "2024-08-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "No adjustments needed"
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.36,
+      "start_date": "2020-09-29T00:00:00",
+      "end_date": "2024-08-25T00:00:00",
+      "target_epoch": "OPUS",
+      "notes": "Add -0.36 to adjust to NAVD88 (OPUS 2020.74) determined using PBM BOAT RAMP elevation = 56.70'; (Geoid18)."
+    },
+    {
+      "cal_datum": "NGVD29 (1976)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.32,
+      "start_date": "2018-05-19T00:00:00",
+      "end_date": "2020-09-28T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "Using BM A 254 with a published elevation by NGS datasheet with NAVD 88 (NO EPOCH) = 56.23 NDVD 29 elevation for A 254=56.548' found in old gage inspection."
+    }
+  ],
+  "01480": [
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLG",
+      "factor_ft": 2.97,
+      "start_date": "2020-05-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "Adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. This current adjustment is relative to MLLW (2012- 2016)."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLLW",
+      "factor_ft": -0.53,
+      "start_date": "2020-05-26T00:00:00",
+      "end_date": null,
+      "target_epoch": "OTHER",
+      "notes": "Adjustment is due to update to MLLW Modified National Tidal Datum Epoch (MNTDE). This current adjustment value is relative to MLLW (2012-2016)."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLG",
+      "factor_ft": 3.2,
+      "start_date": "2015-07-10T00:00:00",
+      "end_date": "2020-05-25T00:00:00",
+      "target_epoch": "",
+      "notes": "Adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. This current adjustment is relative to MLLW (2007- 2011)."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.24,
+      "start_date": "2024-10-25T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01480 determined via RTK constrained to primary benchmark 876 0849 A TIDAL. Elevation of 876 0849 A TIDAL determined via OPUS Shared observation done in Oct 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.84,
+      "start_date": "2013-10-03T00:00:00",
+      "end_date": "2014-08-10T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -1.84' to gage data to shift from MSL (1983) to NAVD88 (2009.55); Survey conducted using 876 0849 A Tidal elevation = 1.53' determined by levels"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.6,
+      "start_date": "1986-05-02T00:00:00",
+      "end_date": "2013-10-02T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -1.60' to gage data to shift from MSL (1983) to NAVD88 (2009.55); Survey conducted using 876 0849 A Tidal elevation = 1.772'"
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "MLLW",
+      "factor_ft": -0.3,
+      "start_date": "2015-07-10T00:00:00",
+      "end_date": "2020-05-25T00:00:00",
+      "target_epoch": "2007-2011",
+      "notes": "Adjustment value is defined in CEPD report dated 7/10/2015, and is relative to 2007-2011 tidal epoch."
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": 1.29,
+      "start_date": "2015-06-28T00:00:00",
+      "end_date": null,
+      "target_epoch": "2004.65",
+      "notes": "Add 1.29' to gage data to go from NAVD88 (2009.55) to NAVD88 (200.65). Adjustment calculated using the elevations of the primary benchmark for this gage (876 0849A TIDAL). NAVD88 (2009.55) = 1.53', NAVD88 (2004.65) = 2.82'."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.58,
+      "start_date": "2009-06-18T00:00:00",
+      "end_date": "2010-08-09T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Add -0.58' to gage data to shift from MSL (1983) to NAVD88 (2004.65); Survey conducted using 876 0849 A Tidal elevation = 2.82'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.54,
+      "start_date": "2007-11-28T00:00:00",
+      "end_date": "2009-06-17T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "New staff installed, set to same. Add -0.54' to gage data to shift from MSL (1983) to NAVD88 (2004.65); Survey conducted using TBM FP A elevation = 6.16'; benchmark determined from survey on 2007 using PBM Tidal elevation = 2.80'"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.58,
+      "start_date": "1986-05-02T00:00:00",
+      "end_date": "2007-11-27T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "Add -0.58 to gage data to shift from MSL (1983) to NAVD88 (2004.65); Surveyed using PBM Tidal elevation NAVD88 (2004.65) = 2.80'"
+    }
+  ],
+  "01400": [
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.05,
+      "start_date": "2018-09-25T00:00:00",
+      "end_date": "2025-01-30T00:00:00",
+      "target_epoch": "OTHER",
+      "notes": "NAVD88 (2009.55); updated gage setting adjustment determined using PBM Hache-1, elevation = 14.35'"
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.07,
+      "start_date": "2025-01-31T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01400 determined via RTK constrained to primary benchmark MVN-68. Elevation of MVN-68 determined via OPUS Shared observation done in Jan 2025. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (OTHER)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.84,
+      "start_date": "1969-09-11T00:00:00",
+      "end_date": "1969-09-12T00:00:00",
+      "target_epoch": "NO EPOCH",
+      "notes": "MSL (1965); adjustment determined using control point V-194; 3.65' MSL (1965), 4.49' MSL (1953); add -0.84' to adjust data to MSL (1965)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.21,
+      "start_date": "2013-10-08T00:00:00",
+      "end_date": "2015-07-01T00:00:00",
+      "target_epoch": "2009.55",
+      "notes": "Add -0.21' to adjust data to NAVD88 (2009.55)"
+    },
+    {
+      "cal_datum": "NAVD88 (2009.55)",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.21,
+      "start_date": "2015-07-01T00:00:00",
+      "end_date": "2015-07-02T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "This adjustment was determined from NAVD88 (2004.65) staff gage, before it was reset to 2009.55. Add +0.21' to adjust data from NAVD88 (2009.55) to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NAVD88",
+      "factor_ft": 0.11,
+      "start_date": "2010-08-12T00:00:00",
+      "end_date": "2015-07-01T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "NAVD88 (2004.65); gage divergence; gage zero = +0.11'"
+    },
+    {
+      "cal_datum": "NGVD29 (1984)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.36,
+      "start_date": "2005-11-29T00:00:00",
+      "end_date": "2005-11-30T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "referenced as VTP88 in inspection; assumed NAVD88 (2004.65); add -0.36' to adjust data to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "NGVD29 (1970)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.49,
+      "start_date": "1984-10-24T00:00:00",
+      "end_date": null,
+      "target_epoch": "1984",
+      "notes": "add -0.49' to adjust data to NGVD29 (1984)"
+    },
+    {
+      "cal_datum": "GAGE DATUM [formerly NAVD88 (2004.65)]",
+      "target_datum": "NGVD29",
+      "factor_ft": 0.84,
+      "start_date": "2014-05-09T00:00:00",
+      "end_date": "2014-05-10T00:00:00",
+      "target_epoch": "1983",
+      "notes": "Estimated adjustment determined from PBM C-195 elevation history. This adjustment is based on the difference between NAVD88 (2004.65) to NGVD29=+0.74', and accounting for the +0.1' gage divergence."
+    },
+    {
+      "cal_datum": "NGVD29 (OTHER)",
+      "target_datum": "NGVD29",
+      "factor_ft": -1.02,
+      "start_date": "1974-05-03T00:00:00",
+      "end_date": "1974-05-04T00:00:00",
+      "target_epoch": "1970",
+      "notes": "MSL (1971); add -1.02' to adjust data to MSL (1971)"
+    }
+  ],
+  "01280": [
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -1.18,
+      "start_date": "2025-01-24T00:00:00",
+      "end_date": null,
+      "target_epoch": "OPUS",
+      "notes": "Adjustment of Gage 01280 determined via differential levelling constrained to primary benchmark 24064 P 1. Elevation of 24064 P 1determined via OPUS Shared observation done in Jan 2025. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024."
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.9,
+      "start_date": "2018-05-02T00:00:00",
+      "end_date": null,
+      "target_epoch": "",
+      "notes": "add -0.90' to adjust gage to NAVD88 (2009.55); adjustment determined from RTK survey with base set up on G95, elevation = 27.01'; metadata indicated GPS issues; USE THIS ADJUSTMENT WITH CAUTION"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.76,
+      "start_date": "2011-03-21T00:00:00",
+      "end_date": null,
+      "target_epoch": "2004.65",
+      "notes": "add -0.76' to shift data to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.8,
+      "start_date": "2010-04-07T00:00:00",
+      "end_date": "2010-04-08T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "add -0.80' to shift data to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.79,
+      "start_date": "2009-11-24T00:00:00",
+      "end_date": "2009-11-25T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "add -0.79' to shift data to NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "NGVD29 (1983)",
+      "target_datum": "NAVD88",
+      "factor_ft": -0.92,
+      "start_date": "2007-11-28T00:00:00",
+      "end_date": "2007-11-29T00:00:00",
+      "target_epoch": "2004.65",
+      "notes": "gage divergence; add -0.920' to shift data to NAVD88 (2004.65); elevation PBM G-95 = 27.11' NAVD88 (2004.65)"
+    },
+    {
+      "cal_datum": "NGVD29 (1955)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.49,
+      "start_date": "1976-10-26T00:00:00",
+      "end_date": "1976-10-27T00:00:00",
+      "target_epoch": "1976",
+      "notes": "add -0.49 to shift data to MSL (1976)"
+    },
+    {
+      "cal_datum": "NGVD29 (1951)",
+      "target_datum": "NGVD29",
+      "factor_ft": -0.077,
+      "start_date": "1953-01-28T00:00:00",
+      "end_date": "1953-01-29T00:00:00",
+      "target_epoch": "1955",
+      "notes": "add -0.077' to shift data to MSL (1953)"
+    }
+  ]
+}

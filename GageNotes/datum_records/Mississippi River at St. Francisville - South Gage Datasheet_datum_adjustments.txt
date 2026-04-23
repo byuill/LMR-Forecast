@@ -1,0 +1,47 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at St. Francisville - South Gage Datasheet.pdf
+# USACE Code  : 01145
+# Generated   : 2026-04-23T01:45:14 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+GAGE DATUM [formerly NAVD88 (OPUS)]|NGVD29|0.42|2025-03-26T00:00:00|||Add 0.42' to gage data to adjust from NAVD88 OPUS to NGVD29. Gage reset 03/25/2025 using TBM Square elevation = 55.24'
+GAGE DATUM [formerly NAVD88 (OPUS)]|NGVD29|0.5|2022-05-07T00:00:00|2025-03-25T00:00:00||Add 0.50' to gage data to adjust from NAVD88 OPUS to NGVD29. Gage surveyed and reset to previous on 03/25/2025 using TBM Square elevation = 55.24'
+NAVD88 (OPUS)|NGVD29|0.43|2010-08-24T00:00:00|2022-05-06T00:00:00||Add 0.43' to gage data to adjust from NAVD88 OPUS to NGVD29. Survey conducted 05/06/2022 using PBM Willie NGVD29 elevation = 53.78'
+GAGE DATUM [formerly NAVD88 (OPUS)]|NAVD88|0.08|2022-05-06T00:00:00|2025-03-25T00:00:00|OPUS|Add 0.08' to gage data to adjust back to NAVD88 OPUS. Survey conducted 03/25/2025 using TBM Square elevation = 54.82'. TBM Square elevation set 05/06/2022 using PBM Willie elevation = 53.36'
+GAGE DATUM [formerly NAVD88 (OPUS)]|NAVD88|0.1|2017-03-30T00:00:00|2020-02-11T00:00:00|OPUS|Add 0.10' to gage data to adjust back to NAVD88 OPUS. Surveyed and reset 02/11/2020 using BM Willie elevation = 53.36'
+GAGE DATUM [formerly NAVD88 (OPUS)]|NAVD88|0.08|2015-03-19T00:00:00|2017-03-29T00:00:00|OPUS|Add 0.08' to gage data to adjust back to NAVD88 OPUS. Surveyed and reset 03/29/2017 using BM Willie elevation = 53.36'
+NGVD29|NAVD88|-0.86|2009-03-11T00:00:00|2010-08-24T00:00:00|OPUS|Add -0.86' to gage data to adjust from NGVD29 to NAVD88 OPUS 2010. Survey conducted 05/03/2010 using BM Willie elevation = 53.45'
