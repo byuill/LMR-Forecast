@@ -1,0 +1,8 @@
+{
+  "artifact_path": "models/qaqc/network_qaqc_artifact.pkl",
+  "outputs_dir": "models/qaqc_outputs",
+  "station_count": 14,
+  "train_start": "2025-04-23T00:00:00",
+  "train_end": "2026-04-23T00:00:00",
+  "frequency": "D"
+}

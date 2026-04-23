@@ -1,0 +1,50 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at West Pointe a la Hache  Gage Datasheet.pdf
+# USACE Code  : 01400
+# Generated   : 2026-04-23T01:45:15 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NAVD88 (2009.55)|NAVD88|-0.05|2018-09-25T00:00:00|2025-01-30T00:00:00|OTHER|NAVD88 (2009.55); updated gage setting adjustment determined using PBM Hache-1, elevation = 14.35'
+NAVD88 (2009.55)|NAVD88|-0.07|2025-01-31T00:00:00||OPUS|Adjustment of Gage 01400 determined via RTK constrained to primary benchmark MVN-68. Elevation of MVN-68 determined via OPUS Shared observation done in Jan 2025. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024.
+NGVD29 (OTHER)|NGVD29|-0.84|1969-09-11T00:00:00|1969-09-12T00:00:00|NO EPOCH|MSL (1965); adjustment determined using control point V-194; 3.65' MSL (1965), 4.49' MSL (1953); add -0.84' to adjust data to MSL (1965)
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|-0.21|2013-10-08T00:00:00|2015-07-01T00:00:00|2009.55|Add -0.21' to adjust data to NAVD88 (2009.55)
+NAVD88 (2009.55)|NAVD88|0.21|2015-07-01T00:00:00|2015-07-02T00:00:00|2004.65|This adjustment was determined from NAVD88 (2004.65) staff gage, before it was reset to 2009.55. Add +0.21' to adjust data from NAVD88 (2009.55) to NAVD88 (2004.65)
+GAGE DATUM [formerly NAVD88 (2004.65)]|NAVD88|0.11|2010-08-12T00:00:00|2015-07-01T00:00:00|2004.65|NAVD88 (2004.65); gage divergence; gage zero = +0.11'
+NGVD29 (1984)|NAVD88|-0.36|2005-11-29T00:00:00|2005-11-30T00:00:00|2004.65|referenced as VTP88 in inspection; assumed NAVD88 (2004.65); add -0.36' to adjust data to NAVD88 (2004.65)
+NGVD29 (1970)|NGVD29|-0.49|1984-10-24T00:00:00||1984|add -0.49' to adjust data to NGVD29 (1984)
+GAGE DATUM [formerly NAVD88 (2004.65)]|NGVD29|0.84|2014-05-09T00:00:00|2014-05-10T00:00:00|1983|Estimated adjustment determined from PBM C-195 elevation history. This adjustment is based on the difference between NAVD88 (2004.65) to NGVD29=+0.74', and accounting for the +0.1' gage divergence.
+NGVD29 (OTHER)|NGVD29|-1.02|1974-05-03T00:00:00|1974-05-04T00:00:00|1970|MSL (1971); add -1.02' to adjust data to MSL (1971)

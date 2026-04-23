@@ -1,0 +1,51 @@
+# ============================================================
+# Datum Adjustment Archive — LMR_QAQC System
+# Source PDF  : Mississippi River at Venice Gage Datasheet.pdf
+# USACE Code  : 01480
+# Generated   : 2026-04-23T01:45:14 UTC
+#
+# ASSUMPTIONS APPLIED BY LMR_QAQC
+# ----------------------------------
+# 1. Raw stage values downloaded from the RiverGages API carry no vertical
+#    datum metadata. The USACE does not transmit datum information through
+#    the API — it is documented only in the gage datasheet PDFs in GageNotes/.
+#    The adjustment records in each per-station archive file are therefore the
+#    sole authoritative source of datum change history for that station.
+#
+# 2. Adjustment factors are in FEET and are ADDITIVE:
+#      corrected_stage_ft = raw_stage_ft + factor_ft
+#    A negative factor lowers stage (e.g. re-levelling found the gage was
+#    reading high); a positive factor raises it.
+#
+# 3. During training only adjustments whose target_datum contains "NAVD88"
+#    are applied, normalising all stations to a common NAVD88 reference.
+#    Adjustments targeting other datums (e.g. NGVD29, MSL) are archived
+#    here for completeness but are NOT applied.
+#
+# 4. When adjustment periods from different NAVD88 epochs overlap the same
+#    calendar dates, the row with the most recent (highest numeric)
+#    target_epoch takes priority. Older epoch rows are skipped for those
+#    dates to avoid double-counting.
+#
+# 5. Rows with no end_date are open-ended: the correction is applied from
+#    start_date through the end of the available data record.
+#
+# 6. Rows where (end_date - start_date) < 2 days are excluded. These are
+#    single-entry datum-transition bookkeeping records used by the USACE to
+#    mark the instant of a re-levelling, not sustained corrections to the
+#    continuous stage time series.
+#
+# COLUMNS (pipe-delimited; empty end_date = open-ended correction)
+# cal_datum|target_datum|factor_ft|start_date|end_date|target_epoch|notes
+# ============================================================
+NAVD88 (2009.55)|MLG|2.97|2020-05-26T00:00:00|||Adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. This current adjustment is relative to MLLW (2012- 2016).
+NAVD88 (2009.55)|MLLW|-0.53|2020-05-26T00:00:00||OTHER|Adjustment is due to update to MLLW Modified National Tidal Datum Epoch (MNTDE). This current adjustment value is relative to MLLW (2012-2016).
+NAVD88 (2009.55)|MLG|3.2|2015-07-10T00:00:00|2020-05-25T00:00:00||Adjustment value is based on 3.5' calibration value to MLLW, as defined by CEPD report dated 7/10/2015. This current adjustment is relative to MLLW (2007- 2011).
+NAVD88 (2009.55)|NAVD88|-0.24|2024-10-25T00:00:00||OPUS|Adjustment of Gage 01480 determined via RTK constrained to primary benchmark 876 0849 A TIDAL. Elevation of 876 0849 A TIDAL determined via OPUS Shared observation done in Oct 2024. This OPUS observation was done in conjunction with an update of all MVN Mississippi River gages and Primary Control Points (benchmarks) done in late 2024 / early 2025 (EDD-S Job 24-064S). Add the gage adjustment factor to the raw gage reading to determine the NAVD88 value as per OPUS measurement in 2024.
+NGVD29 (1983)|NAVD88|-1.84|2013-10-03T00:00:00|2014-08-10T00:00:00|2009.55|Add -1.84' to gage data to shift from MSL (1983) to NAVD88 (2009.55); Survey conducted using 876 0849 A Tidal elevation = 1.53' determined by levels
+NGVD29 (1983)|NAVD88|-1.6|1986-05-02T00:00:00|2013-10-02T00:00:00|2009.55|Add -1.60' to gage data to shift from MSL (1983) to NAVD88 (2009.55); Survey conducted using 876 0849 A Tidal elevation = 1.772'
+NAVD88 (2009.55)|MLLW|-0.3|2015-07-10T00:00:00|2020-05-25T00:00:00|2007-2011|Adjustment value is defined in CEPD report dated 7/10/2015, and is relative to 2007-2011 tidal epoch.
+NAVD88 (2009.55)|NAVD88|1.29|2015-06-28T00:00:00||2004.65|Add 1.29' to gage data to go from NAVD88 (2009.55) to NAVD88 (200.65). Adjustment calculated using the elevations of the primary benchmark for this gage (876 0849A TIDAL). NAVD88 (2009.55) = 1.53', NAVD88 (2004.65) = 2.82'.
+NGVD29 (1983)|NAVD88|-0.58|2009-06-18T00:00:00|2010-08-09T00:00:00|2004.65|Add -0.58' to gage data to shift from MSL (1983) to NAVD88 (2004.65); Survey conducted using 876 0849 A Tidal elevation = 2.82'
+NGVD29 (1983)|NAVD88|-0.54|2007-11-28T00:00:00|2009-06-17T00:00:00|2004.65|New staff installed, set to same. Add -0.54' to gage data to shift from MSL (1983) to NAVD88 (2004.65); Survey conducted using TBM FP A elevation = 6.16'; benchmark determined from survey on 2007 using PBM Tidal elevation = 2.80'
+NGVD29 (1983)|NAVD88|-0.58|1986-05-02T00:00:00|2007-11-27T00:00:00|2004.65|Add -0.58 to gage data to shift from MSL (1983) to NAVD88 (2004.65); Surveyed using PBM Tidal elevation NAVD88 (2004.65) = 2.80'

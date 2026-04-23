@@ -1,0 +1,18 @@
+--- Stage_Values_For_You.py
++++ Stage_Values_For_You.py
+@@ -1286,2 +1286,2 @@
+     Returns (peaks, troughs) as DatetimeIndex objects.
+     """
+     s = series.dropna()
+     if len(s) < 2 * half_window + 1:
+         return pd.DatetimeIndex([]), pd.DatetimeIndex([])
+
+-    sigma = robust_sigma(s.values)
++    sigma = robust_sigma(s.values.astype(float))
+     min_prom = max(min_prom_sigma * sigma, 0.01)  # at least 0.01 ft
+@@ -1296,2 +1296,2 @@
+         # Peak: centre must strictly exceed all neighbours within window
+         neighbours = np.concatenate(
+-            [vals[i - half_window: i], vals[i + 1: i + half_window + 1]])
++            [vals[i - half_window: i].astype(float), vals[i + 1: i + half_window + 1].astype(float)])
+         if not np.isnan(vals[i]) and vals[i] >= local_max and float(vals[i]) > float(np.nanmax(neighbours)):
